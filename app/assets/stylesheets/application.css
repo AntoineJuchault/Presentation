@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+    background-color: #2d3eb9;
+
+}
+/* debut de la navBar */
+/* Styles pour la navbar */
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #162595;
+    border-radius: 10px;
+}
+
+  /* Styles pour les liens de la navbar */
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-item a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nav-item a:hover {
+    background-color: #3c50ac;
+    color: #fff;
+}
+
+/* fin de la navBar */
+
+
+/* debut de la page d'acceuil*/
+
+h1 {
+    text-align: center;
+    color: #f2f2ff;
+}
+
+img {
+    width: 700px;
+    height: 350px;
+    margin-right: 10px;
+}
+.conteneur {
+    display: flex;
+    color: #f2f2ff;
+    border: 2px solid;
+    margin-bottom: 20px;
+    padding: 2px 4px;
+
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f2f2ff;
+    border: 2px solid;
+    padding-left: 10px;  
+    height: 200px;
+    width: auto;
+    padding: 2px 4px;
+}
+
+
+/* Fin page d'acceuil */
+
+
+/* Page de contact */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #f2f2ff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+}
+textarea {
+    height: 200px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #f1f0f0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer ;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    border-radius: 10px;
+
+}
+
+/* fin de la page de  contact */
