@@ -37,7 +37,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 
@@ -58,7 +58,7 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
@@ -70,7 +70,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :user_name => '8c717faf554c48',
-    :password => '********4340',
+    :password => "915344fc00b18a869c809c8938a70034",
     :address => 'sandbox.smtp.mailtrap.io',
     :host => 'sandbox.smtp.mailtrap.io',
     :port => '2525',

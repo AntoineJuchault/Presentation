@@ -12,130 +12,60 @@
  *
  *= require_tree .
  *= require_self
+ *= require navbar
  */
-body {
-    background-color: #2d3eb9;
-
-}
-/* debut de la navBar */
-/* Styles pour la navbar */
-.navbar {
-    background-color: #f8f8f8;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #162595;
-    border-radius: 10px;
+:root {
+    --background-color: #2d539a;
+    --navbar-color: #4c71b7;
+    --text-color: #f2f2ff;
 }
 
-  /* Styles pour les liens de la navbar */
-.navbar-nav {
-    list-style-type: none;
+
+* {
     margin: 0;
     padding: 0;
-    float: right;
+    box-sizing: border-box;
 }
 
-.nav-item {
-    display: inline-block;
-    margin-right: 10px;
+body {
+     font-family: sans-serif;
+     background-color: var(--background-color);
 }
 
-.nav-item a {
-    color: #f1f1f1;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.nav-item a:hover {
-    background-color: #3c50ac;
-    color: #fff;
-}
-
-/* fin de la navBar */
-
-
-/* debut de la page d'acceuil*/
-
-h1 {
-    text-align: center;
-    color: #f2f2ff;
-}
-
-img {
-    width: 700px;
-    height: 350px;
-    margin-right: 10px;
-}
-.conteneur {
-    display: flex;
-    color: #f2f2ff;
-    border: 2px solid;
-    margin-bottom: 20px;
-    padding: 2px 4px;
-
-}
-
-
-.content {
+#home {
+    padding: 0 230px;
+    height: 80vh;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f2f2ff;
-    border: 2px solid;
-    padding-left: 10px;  
-    height: 200px;
-    width: auto;
-    padding: 2px 4px;
 }
 
-
-/* Fin page d'acceuil */
-
-
-/* Page de contact */
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+#description {
+    flex: 1; /* Permet au texte de prendre de l'espace disponible */
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
+#description h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 1.4px;
     font-weight: bold;
-    color: #f2f2ff;
+    line-height: 1.4;
+    color: var(--text-color);
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 10px;
-    border: none;
-    resize: none;
-}
-textarea {
-    height: 200px;
+#description p {
+    font-size: 24px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-top: 20px;
 }
 
-.btn {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #f1f0f0;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer ;
+#imghome {
+    flex: 1; /* Permet à l'image de prendre de l'espace disponible */
 }
 
-.btn:hover {
-    background-color: #45a049;
-    border-radius: 10px;
-
+#imghome img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+    display: block; /* Supprime l'espace réservé pour la ligne de base du texte */
 }
-
-/* fin de la page de  contact */

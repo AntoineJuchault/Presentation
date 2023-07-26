@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: #4c71b7;
+}
+  
+#logo h3 {
+    font-size: 26px;
+    color: #f2f2ff;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    padding-left: 3px;
+}
+  
+#menu ul {
+    display: flex;
+    align-items: center;
+}
+  
+#menu ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: #f2f2ff;
+    position: relative; /* Ajoutez cette ligne pour positionner le pseudo-élément */
+  }
+  
+  #menu ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #f2f2ff;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.3s; /* Durée de l'animation lors du survol */
+  }
+  
+  #menu ul li a:hover:after {
+    width: 100%; /* La largeur devient 100% lors du survol */
+  }

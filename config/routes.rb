@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: "pages#index"
   get '/contact', to: 'contact_form#new', as: 'contact'
+  post '/contact', to: 'contact_form#create' # Ajoutez cette ligne pour définir la route POST pour la création du formulaire de contact
 end
