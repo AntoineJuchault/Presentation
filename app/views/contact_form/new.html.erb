@@ -1,3 +1,4 @@
+<div id ="form">
 <%= form_with scope: :contact_form, url: contact_path, method: :post, local: true, class: "container" do |form| %>
     <div class="form-group">
         <%= form.label :name %> <br>
@@ -15,3 +16,4 @@
     <br>
     <%= form.submit "Envoyer", class: "btn" %>
 <% end %>
+</div>

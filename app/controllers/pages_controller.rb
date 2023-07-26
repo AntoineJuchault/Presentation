@@ -2,6 +2,10 @@ class PagesController < ApplicationController
     def new
         @message = Message.new
     end
+    
+    def about
+    end
+
     def create 
         @message = Message.new(message_params)  
         if @message.save
