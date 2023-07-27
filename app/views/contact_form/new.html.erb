@@ -1,19 +1,20 @@
-<div id ="form">
-<%= form_with scope: :contact_form, url: contact_path, method: :post, local: true, class: "container" do |form| %>
-    <div class="form-group">
-        <%= form.label :name %> <br>
-        <%= form.text_field :name, class: "form-control" %> <br>
+<div class = container>
+    <div class ="container-box">
+        <div class ="left"></div>
+        <div class ="right">
+            <h2>contact</h2>
+            <%= form_with scope: :contact_form, url: contact_path, method: :post, local: true, class: "container" do |form| %>
+                    <%= form.text_field :name, class: "field", placeholder: "Votre nom" %> <br>
+
+                    <%= form.email_field :email, class: "field", placeholder: "Votre adresse e-mail" %> <br>
+
+                    <%= form.text_area :message, class: "field", placeholder: "Votre message" %> <br>
+
+                    <br> 
+                </div>
+                <br>
+                <%= form.submit "Envoyer", class: "btn" %>
+            <% end %>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <%= form.label :email %> <br>
-        <%= form.email_field :email, class: "form-control" %> <br> 
-    </div>
-    <div class="form-group">
-        <%= form.label :message %> <br>
-        <%= form.text_area :message, class: "form-control" %> 
-        <br> 
-    </div>
-    <br>
-    <%= form.submit "Envoyer", class: "btn" %>
-<% end %>
-</div>
